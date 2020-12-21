@@ -14,7 +14,7 @@
 此项目完全开源、有兴趣可以提交issue或star
 当然也可以下载下来作为学习交流使用
 ##### 请勿商用（开玩笑了，这个项目目前来说太菜了，只待以后继续修改优化吧）
-
+github地址：https://github.com/easyprogramer/scmisPy
 
 
 ### 最重要的提醒
