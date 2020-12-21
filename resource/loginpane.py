@@ -1,0 +1,116 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'loginpane.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(578, 577)
+        self.gridLayout = QtWidgets.QGridLayout(Dialog)
+        self.gridLayout.setObjectName("gridLayout")
+        self.widget = QtWidgets.QWidget(Dialog)
+        self.widget.setObjectName("widget")
+        self.label = QtWidgets.QLabel(self.widget)
+        self.label.setGeometry(QtCore.QRect(60, 30, 421, 91))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.label.setFont(font)
+        self.label.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.widget, 0, 0, 1, 1)
+        self.widget_3 = QtWidgets.QWidget(Dialog)
+        self.widget_3.setObjectName("widget_3")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.widget_3)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.pushButton_2 = QtWidgets.QPushButton(self.widget_3)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.gridLayout_3.addWidget(self.pushButton_2, 0, 1, 1, 1)
+        self.pushButton = QtWidgets.QPushButton(self.widget_3)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.pushButton.setFont(font)
+        self.pushButton.setObjectName("pushButton")
+        self.gridLayout_3.addWidget(self.pushButton, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.widget_3, 2, 0, 1, 1)
+        self.widget_2 = QtWidgets.QWidget(Dialog)
+        self.widget_2.setObjectName("widget_2")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.widget_2)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        spacerItem = QtWidgets.QSpacerItem(94, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem, 0, 0, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.widget_2)
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout_2.addWidget(self.label_2, 0, 1, 1, 1)
+        self.lineEdit = QtWidgets.QLineEdit(self.widget_2)
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        self.lineEdit.setFont(font)
+        self.lineEdit.setClearButtonEnabled(True)
+        self.lineEdit.setObjectName("lineEdit")
+        self.gridLayout_2.addWidget(self.lineEdit, 0, 2, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(94, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem1, 0, 3, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(94, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem2, 1, 0, 1, 1)
+        self.label_3 = QtWidgets.QLabel(self.widget_2)
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout_2.addWidget(self.label_3, 1, 1, 1, 1)
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.widget_2)
+        font = QtGui.QFont()
+        font.setPointSize(15)
+        self.lineEdit_2.setFont(font)
+        self.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.lineEdit_2.setClearButtonEnabled(True)
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.gridLayout_2.addWidget(self.lineEdit_2, 1, 2, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(94, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem3, 1, 3, 1, 1)
+        self.gridLayout.addWidget(self.widget_2, 1, 0, 1, 1)
+
+        self.retranslateUi(Dialog)
+        self.pushButton.clicked.connect(Dialog.login)
+        self.pushButton_2.clicked.connect(Dialog.close)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "登录"))
+        self.label.setText(_translate("Dialog", "销售合同管理信息系统登录"))
+        self.pushButton_2.setText(_translate("Dialog", "退 出"))
+        self.pushButton.setText(_translate("Dialog", "登 录"))
+        self.label_2.setText(_translate("Dialog", "账 号"))
+        self.lineEdit.setPlaceholderText(_translate("Dialog", "输入账号"))
+        self.label_3.setText(_translate("Dialog", "密 码"))
+        self.lineEdit_2.setPlaceholderText(_translate("Dialog", "输入密码"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Dialog = QtWidgets.QDialog()
+    ui = Ui_Dialog()
+    ui.setupUi(Dialog)
+    Dialog.show()
+    sys.exit(app.exec_())
